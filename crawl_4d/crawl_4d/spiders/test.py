@@ -3,7 +3,7 @@ from scrapy.selector import Selector
 import os
 class Spider4D(Spider):
     name = "sabah"
-    filepath = os.getenv("HOME") + '/' + name
+    filepath = os.getenv("HOME") + '/desktop/' + name
     start_urls = (
         "http://www.check4d.com/sabah-sarawak-4d-results/",
         # Add more 4d site here

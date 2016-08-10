@@ -10,7 +10,7 @@ class Spider4DSingapore(Spider):
     )
 
     def parse(self, response):
-        filepath = os.getenv("HOME") + '/' + self.name
+        filepath = os.getenv("HOME") + '/desktop/' + self.name
         sabah = Selector(response)
         outerboxs = sabah.xpath('//div[@class="outerbox"]')
         # create new file
